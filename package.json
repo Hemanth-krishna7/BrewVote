@@ -1,0 +1,18 @@
+{
+  "name": "brewvote",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BrewVote - Coffee discovery and voting platform",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "install-all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
