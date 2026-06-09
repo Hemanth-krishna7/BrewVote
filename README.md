@@ -1,65 +1,49 @@
-# BrewVote
+# ☕ BrewVote
 
-BrewVote is a production-ready, coffee discovery and voting platform designed with a clean monorepo architecture separating the React frontend (`client`) and the Node.js/Express backend (`server`).
+BrewVote is a community-driven coffee discovery platform where users can explore coffee listings, vote for their favorites, and track the most popular brews through a live leaderboard.
 
-## Project Stack
+Designed as a full-stack web application, BrewVote combines secure authentication, community engagement, and role-based administration into a complete product experience.
 
-* **Frontend**: React, Vite, Tailwind CSS v4, React Router DOM, Axios
-* **Backend**: Node.js, Express.js
-* **Database**: MongoDB Atlas via Mongoose
+## Live Demo
 
-## Monorepo Architecture
+🔗 https://brew-vote-client.vercel.app
 
-```
-BrewVote/
-├── client/                 # React frontend (Vite, Tailwind v4)
-│   ├── src/
-│   │   ├── assets/         # Static assets
-│   │   ├── components/     # Reusable UI components (Navbar, Footer, ProtectedRoute)
-│   │   ├── context/        # React Contexts (AuthContext)
-│   │   ├── hooks/          # Custom react hooks (useFetch)
-│   │   ├── pages/          # Page layouts (Home, Login, Register, CoffeeDetails, AdminDashboard)
-│   │   ├── services/       # Service layers for API (api, authService, coffeeService, voteService)
-│   │   ├── App.jsx         # App routes and Layout
-│   │   ├── main.jsx        # App entrypoint
-│   │   └── index.css       # Tailwind CSS v4 styling
-│   └── package.json
-├── server/                 # Express backend
-│   ├── config/             # DB connections and environment configurations
-│   ├── constants/          # Application-wide constants
-│   ├── controllers/        # Request handlers (auth, coffee, votes, analytics)
-│   ├── middleware/         # Custom Express middlewares (errorHandler, authMiddleware)
-│   ├── models/             # Mongoose database models (User, Coffee, Vote)
-│   ├── routes/             # Router declarations
-│   ├── utils/              # Common utility functions
-│   ├── validators/         # Request validation logic
-│   ├── server.js           # Server application starter
-│   └── package.json
-├── package.json            # Root workspace config
-├── .gitignore              # Files to ignore in Git
-└── README.md               # Project documentation
-```
+## Preview
 
-## Quick Start
+### Home & Community Rankings
 
-### Prerequisites
-- Node.js (v18+)
-- npm (v9+)
+<img width="2556" height="1600" alt="image" src="https://github.com/user-attachments/assets/1cb0908d-ca5e-4460-8fd5-9d4de1a00ac7" />
 
-### Installation
-Run the following command in the root folder to install all root, client, and server dependencies:
-```bash
-npm install
-```
+### Admin Dashboard
 
-### Run in Development
-Start both frontend and backend development servers concurrently:
-```bash
-npm run dev
-```
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/8be832dc-5d7b-43a8-bb4c-09e0cbfe30d1" />
 
-### Production Build
-Build the frontend client for production:
-```bash
-npm run build
-```
+## Features
+
+* Secure user registration and login
+* JWT-based authentication
+* Coffee discovery and search
+* Community voting system
+* Duplicate vote prevention
+* Live leaderboard rankings
+* Detailed coffee profiles
+* Role-based admin dashboard
+* Coffee management (create, edit, deactivate)
+* Responsive design across devices
+
+## Built With
+
+**Frontend** — React, Vite, Tailwind CSS
+
+**Backend** — Node.js, Express.js, MongoDB Atlas
+
+**Authentication** — JWT
+
+## Highlights
+
+* Full-stack architecture
+* RESTful API design
+* Role-based access control
+* Cloud deployment
+* Production-ready database integration
+* Responsive user experience
